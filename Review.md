@@ -28,7 +28,7 @@
     - При аггрегировании нужно однозначно разобраться в используемых протоколах. Потому что Jupiter при совершении свопа может перегонять деньги по нескольким кошелькам и биржам, что может завышать истинный volume
 2. Dune     
 В dune есть уже две готовые и предобработанные таблицы со всеми досутпными транзакциями: [jupiter_solana.aggregator_swaps](https://docs.dune.com/data-catalog/curated/solana/trading/jupiter-aggregator-trades) и [dex_solana.trades](https://docs.dune.com/data-catalog/curated/solana/trading/solana-dex-trades). Работа с dune осуществляется через sql запросы.
-    - За 2024 год jupiter совершил ~ 1,564,266,635 свопов (данные из dune). В dune транзакция занимает ~400 байт памяти, так что бд со всей информацией про транзакций jupiter из dune за год окажется примерно ~625 Гб.
+    - За 2024 год jupiter совершил ~ 976,425,918 свопов (трейдов) в 1,564,266,635 транзакциях. В dune транзакция занимает ~400 байт памяти, так что бд со всей информацией про все свопы jupiter из dune за год окажется примерно ~390 Гб.
     - Можно предобработать данные о транзакциях в OHLC на стороне dune и выкачать уже их, [типо такого](https://dune.com/queries/3581970). Или брать таблицу [prices.minute](https://docs.dune.com/data-catalog/curated/prices/overview) основанную на dex_solana.trades
     - [прайсинг](https://docs.dune.com/learning/how-tos/credit-system-on-dune) зависит от [количества выгружаемой информации](https://docs.dune.com/learning/how-tos/credit-system-on-dune): 
 1. Самим [стать нодой](https://solana.com/developers/cookbook/development/start-local-validator) и/или выкачать весь блокчейн за интересующий период. Жёстко. Зато бесплатно, если не считать hdd, интернет и последующие вычисления.
