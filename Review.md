@@ -16,7 +16,7 @@
     - интервал времени >= 1 минуты
     - 
     - прайсинг скрыт за Let's Talk страницей
-1. [BirdEye](https://docs.birdeye.so/docs/ohlcv-pair) - 
+1. [birdeye data service](https://docs.birdeye.so/docs/ohlcv-pair) - Multi-chain API
     - Название биржи нельзя указать
     - интервал времени >= 1 минуты
     - возвращает ещё и volume
